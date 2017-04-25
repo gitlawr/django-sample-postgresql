@@ -77,11 +77,14 @@ WSGI_APPLICATION = 'samplesite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'OPTIONS': {
-            'read_default_file': '/code/my.cnf',
-        },
+        'NAME': 'test',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'postgresql-postgresql',
+        'PORT': '',
     }
 }
+
 
 
 # Password validation
