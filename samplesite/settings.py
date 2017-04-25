@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'samplesite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'OPTIONS': {
             'read_default_file': '/code/my.cnf',
         },
